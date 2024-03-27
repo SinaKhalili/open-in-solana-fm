@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Solscan to SolanaFM",
+    "version": "1.0",
+    "description": "Adds a button to Solscan pages to open the corresponding page on SolanaFM",
+    "icons": {},
+    "content_scripts": [
+        {
+            "matches": ["https://solscan.io/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": ["activeTab"]
+}
